@@ -1,0 +1,10 @@
+<div *ngIf="imgUrl != ''">
+  <img id="mainPic" src="{{imgUrl}}" alt="some city">
+</div>
+<div *ngIf="currCity != ''">
+  <h1>{{currCity.name}}</h1>
+  <h4>Humidity: {{currCity.main.humidity}}</h4>
+  <h4>Temperature(Average): {{currCity.main.temp}} Kelvin</h4>
+  <h4>Temperature(High): {{currCity.main.temp_max}} Kelvin</h4>
+  <h4>Temperature(Low): {{currCity.main.temp_min}} Kelvin</h4>
+</div>
